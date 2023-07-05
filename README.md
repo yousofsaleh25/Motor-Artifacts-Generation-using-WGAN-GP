@@ -5,7 +5,7 @@ WGAN-GP
 To run the WGAN-GP code to generate 128x128 images use --> 
 
 !python main.py --model WGAN-GP \
- \t               --is_train True \
+      <br>          --is_train True \
                 --download True \
                 --train_dataroot MotorImage_train \
                 --test_dataroot MotorImage_test \
@@ -15,6 +15,8 @@ To run the WGAN-GP code to generate 128x128 images use -->
                 --generator_iters 5001 \
                 --cuda True \
                 --batch_size 64 
+
+                if --large_size is set to False the generated images will be of size 32x32
 
 Conditional WGAN-GP
 ![cGAN](https://github.com/yousofsaleh25/Motor-Artifacts-Generation-using-WGAN-GP/assets/43546116/206b9e34-caa1-4a6f-857d-fe05ec2465bc)
