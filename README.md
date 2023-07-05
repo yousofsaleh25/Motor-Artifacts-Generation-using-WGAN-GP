@@ -5,16 +5,16 @@ WGAN-GP
 To run the WGAN-GP code to generate 128x128 images use --> 
 
       !python main.py --model WGAN-GP \
-                --is_train True \
-                --download True \
-                --train_dataroot MotorImage_train \
-                --test_dataroot MotorImage_test \
-                --class_name all \
-                --large_size True \
-                --dataset motor \
-                --generator_iters 5001 \
-                --cuda True \
-                --batch_size 64 
+                      --is_train True \
+                      --download True \
+                      --train_dataroot MotorImage_train \
+                      --test_dataroot MotorImage_test \
+                      --class_name all \
+                      --large_size True \
+                      --dataset motor \
+                      --generator_iters 5001 \
+                      --cuda True \
+                      --batch_size 64 
 
 if --large_size is set to False the generated images will be of size 32x32
 
@@ -23,13 +23,13 @@ Conditional WGAN-GP
 To run the Conditional WGAN-GP to generate 128x128 images for the selected class use -->
 
       !python main.py --model CGAN \
-                --is_train True \
-                --download True \
-                --train_dataroot MotorImage_train \
-                --test_dataroot MotorImage_test \
-                --class_name all \
-                --large_size True \
-                --dataset motor \
-                --generator_iters 5001 \
-                --cuda True \
-                --batch_size 64 
+                      --is_train True \
+                      --download True \
+                      --train_dataroot MotorImage_train \
+                      --test_dataroot MotorImage_test \
+                      --class_name all \
+                      --large_size True \
+                      --dataset motor \
+                      --generator_iters 5001 \
+                      --cuda True \
+                      --batch_size 64 
