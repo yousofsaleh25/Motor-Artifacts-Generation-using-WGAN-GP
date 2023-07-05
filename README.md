@@ -5,7 +5,7 @@ WGAN-GP
 To run the WGAN-GP code to generate 128x128 images use --> 
 
 !python main.py --model WGAN-GP \
-                --is_train True \
+ \t               --is_train True \
                 --download True \
                 --train_dataroot MotorImage_train \
                 --test_dataroot MotorImage_test \
